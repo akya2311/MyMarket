@@ -1,0 +1,10 @@
+@import "../../css-config/mixins.scss";
+.single-product-main-content {
+    height: 90vh;
+    overflow-y: scroll;
+    @include sm {
+        width: 70%;
+        margin: auto;
+    }
+    
+}

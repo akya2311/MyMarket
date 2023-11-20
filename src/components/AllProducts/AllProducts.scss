@@ -1,0 +1,14 @@
+@import "../../css-config/mixins.scss";
+
+.bg-container {
+   
+    padding-top: 20px;
+    background-size: cover;
+    .card-container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: wrap;
+        gap: 5px;
+    }
+}

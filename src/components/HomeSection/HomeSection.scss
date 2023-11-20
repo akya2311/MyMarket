@@ -1,0 +1,22 @@
+@import "../../css-config/mixins.scss";
+
+.card-section {
+    padding: 0px;
+
+    .product-carousal {
+        background-image: url('https://i.postimg.cc/C1QdGJ4J/no-revisions-4t-CRA93i-BVo-unsplash.jpg');
+        background-size: cover;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+        @include md {
+            padding: 0px;
+            margin-top: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            
+        }
+    }
+}

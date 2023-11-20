@@ -1,0 +1,141 @@
+@import "../../css-config/mixins.scss";
+
+.card-bg-container {
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+    h1 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+
+        letter-spacing: 0.2px;
+        color: #334155;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        align-self: flex-start;
+        margin-left: 10px;
+
+        @include md {
+            margin-left: 40px;
+        }
+    }
+
+    .card {
+        display: flex;
+        margin-bottom: 10px;
+        flex-flow: wrap;
+        gap: 7px;
+        margin-left: 5px;
+
+        @include md {
+            margin-left: 20px;
+        }
+        .home-card-section-1 {
+            background-color: white;
+            width: 250px;
+            border-radius: 0.5rem;
+            box-shadow: rgba(96, 96, 96, 0.16) 0px 4px 8px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+           
+            @include md {
+                height: 150px;
+                width: calc(43% - 5px);
+            }
+
+            .card-name {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                p {
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #334155;
+                    margin: 0px;
+                    text-emphasis: none;
+
+
+                }
+            }
+
+
+            img {
+                width: 50%;
+                height: 95%;
+                border-radius: 8px;
+                transition: all ease 0.3s;
+
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .home-card-section {
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            --bg-opacity: 1;
+            border-width: 1px;
+            --border-opacity: 1;
+            border-radius: 0.5rem;
+            box-shadow: rgba(98, 98, 98, 0.18) 0px 4px 8px;
+            overflow: hidden;
+
+
+            @include md {
+                width: calc(22% - 5px);
+                height: 150px;
+            }
+
+            img {
+                height: 80%;
+                width: 100%;
+                border-radius: 8px;
+                transition: all ease 0.3s;
+
+                @include md {
+                    height: 85%;
+                }
+            }
+
+            p {
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: #334155;
+
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

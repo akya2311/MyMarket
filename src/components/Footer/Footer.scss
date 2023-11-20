@@ -1,0 +1,55 @@
+@import "../../css-config/mixins.scss";
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../assets/newsletter-bg.jpeg");
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+    
+    @include md {
+        padding: 0 40px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: flex;
+        justify-content: space-around;
+        
+        list-style: none;
+
+        .icon-section{
+            color: #212121;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span{
+            font-size: 13px;
+        }
+    }
+    &.sticky-footer {
+        background-color: #212121;
+        color: white;
+        position: sticky;
+        top: 0;
+        transform: translateY(-60px);
+        animation: StickyFooter 0.3s ease forwards;
+    }
+}
+
+
+
+
+
+@keyframes StickyFooter {
+    0% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

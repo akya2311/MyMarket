@@ -1,0 +1,51 @@
+@import "../../css-config/mixins.scss";
+.order-again-bg-container{
+  background-image: url('https://i.postimg.cc/C1QdGJ4J/no-revisions-4t-CRA93i-BVo-unsplash.jpg');
+  background-size: cover;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin-bottom: 0px;
+ margin-top: 0px;
+.orderagain-product-container{
+    width: 100%;
+    .sec-heading {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include sm {
+            font-size: 24px;
+        }
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 5px;
+            width: 50px;
+            height: 3px;
+            background-color: #8e2de2;
+            @include md {
+                margin-top: 10px;
+            }
+        }
+    }
+    .orderagain-product-carousal{
+        height: 90%;
+        width: 100%;
+        @include md {
+            margin: 10px;
+            width: 98%;
+        }
+        .home-product{
+            width: 100%;
+
+            @include sm {
+                width: 95%;
+            }
+           
+        }
+
+    }
+    
+}
+}
